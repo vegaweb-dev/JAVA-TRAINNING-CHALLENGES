@@ -48,8 +48,8 @@ public class PooFundamentalEx {
 
     public static void main(String[] args) {
         PooFundamentalEx objeto = new PooFundamentalEx("carlos", 34);
-        System.out.println(objeto.nombre);
-        System.out.println(objeto.edad);
+        System.out.println(objeto.getNombre());
+        System.out.println(objeto.getEdad());
     }
 
 
