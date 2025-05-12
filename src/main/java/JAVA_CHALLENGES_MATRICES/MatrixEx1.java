@@ -85,53 +85,46 @@ public class MatrixEx1{
 
 //solucion 3
 
-import java.util.ArrayList;
-
-public class MatrixEx1 {
-
-    //Creamos la funcion
-    public static int sumarElementos(ArrayList<ArrayList<Integer>> arreglo) {
-        int acumulador = 0;
-
-        for (int i = 0; i < arreglo.size(); i++) {
-            for (int j = 0; j < arreglo.get(i).size(); j++) {
-                acumulador += arreglo.get(i).get(j);
-                System.out.println(acumulador);
-            }
-        }
-        return acumulador;
-    }
-
-    public static void main(String[] args) {
-        //creamos el arrylist
-        ArrayList<ArrayList<Integer>> myArray = new ArrayList<ArrayList<Integer>>();
-        int filas = (int) Math.floor(Math.random() * 10) + 1;
-        int columnas = (int) Math.floor(Math.random() * 10) + 1;
-        for (int i = 0; i < filas; i++) {
-            myArray.add(new ArrayList<Integer>());
-            for (int j = 0; j < columnas; j++) {
-                int valor = (int) Math.floor(Math.random() * 10);
-                myArray.get(i).add(valor);
-            }
-        }
-
-        //mostramos todos los elementos del arreglo creado
-        for (int i = 0; i < myArray.size(); i++) {
-            for (int j = 0; j < myArray.get(i).size(); j++) {
-                System.out.println(myArray.get(i).get(j));
-            }
-        }
-
-        //la siguiente linea nos daria la suma de todos los elemetos de los arreglos
-        sumarElementos(myArray);
-    }
-}
-
-
-
-
-
-
-
-
+//import java.util.ArrayList;
+//
+//public class MatrixEx1 {
+//
+//    //Creamos la funcion
+//    public static int sumarElementos(ArrayList<ArrayList<Integer>> arreglo) {
+//        int acumulador = 0;
+//
+//        for (int i = 0; i < arreglo.size(); i++) {
+//            for (int j = 0; j < arreglo.get(i).size(); j++) {
+//                acumulador += arreglo.get(i).get(j);
+//                System.out.println(acumulador);
+//            }
+//        }
+//        return acumulador;
+//    }
+//
+//    public static void main(String[] args) {
+//        //creamos el arrylist
+//        ArrayList<ArrayList<Integer>> myArray = new ArrayList<ArrayList<Integer>>();
+//        int filas = (int) Math.floor(Math.random() * 10) + 1;
+//        int columnas = (int) Math.floor(Math.random() * 10) + 1;
+//        for (int i = 0; i < filas; i++) {
+//            myArray.add(new ArrayList<Integer>());
+//            for (int j = 0; j < columnas; j++) {
+//                int valor = (int) Math.floor(Math.random() * 10);
+//                myArray.get(i).add(valor);
+//            }
+//        }
+//
+//        //mostramos todos los elementos del arreglo creado
+//        for (int i = 0; i < myArray.size(); i++) {
+//            for (int j = 0; j < myArray.get(i).size(); j++) {
+//                System.out.println(myArray.get(i).get(j));
+//            }
+//        }
+//
+//        //la siguiente linea nos daria la suma de todos los elemetos de los arreglos
+//        sumarElementos(myArray);
+//    }
+//}
+//
 
