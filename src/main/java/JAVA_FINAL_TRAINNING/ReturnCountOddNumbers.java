@@ -29,7 +29,6 @@ class CreateMatrix {
         //print random-sized matrix of zeros
         System.out.println("PRINT MATRIX OF ZEROS: ");
         System.out.println(Arrays.deepToString(initialMatrix));
-
         //fill matrix with random values
         for (int i = 0; i < initialMatrix.length; i++) {
             for (int j = 0; j < initialMatrix[i].length; j++) {
@@ -41,18 +40,14 @@ class CreateMatrix {
         System.out.println("PRINT MATRIZ OF RANDOM VALUES");
         System.out.println(Arrays.deepToString(initialMatrix));
         return initialMatrix;
-
     }
 }
-
 
 public class ReturnCountOddNumbers {
     public static void main(String[] args) {
         CreateMatrix createMatrix = new CreateMatrix();
         int[][] matrixToBeFiltered = createMatrix.genMatrix();
-
         CountOddNumbers countOdds = new CountOddNumbers();
         int count = countOdds.countOddNumbers(matrixToBeFiltered);
-
     }
 }
