@@ -1,4 +1,11 @@
 package JAVA_PROGRESSIVE_CHALLENGES;
+//Challenge:
+//Declare two variables, x and y, of type int. Assign the value 5 to x and the value 3 to y.
+// Then, perform and display the result of the following operations in the console:
+//Sum of x and y.
+//Subtraction of x and y.
+//Multiplication of x and y.
+//Solution:
 
 
 class ValuesForCalculator {
