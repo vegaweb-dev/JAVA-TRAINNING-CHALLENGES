@@ -19,6 +19,19 @@ class ValueEx11 {
     }
 }
 
+class POJO {
+    private String response;
+
+    POJO(String response) {
+        this.response = response;
+    }
+
+    public String getResponse() {
+        return response;
+    }
+}
+
+
 class CalculatorEx11 {
     ValueEx11 valueEx11;
 
@@ -42,20 +55,15 @@ class CalculatorEx11 {
         return true;
     }
 
-
-}
-
-class PojoForValues {
-    CalculatorEx11 calculatorEx11;
-
-    PojoForValues(CalculatorEx11 calculatorEx11) {
-        this.calculatorEx11 = calculatorEx11;
+    POJO responseContainer() {
+        if (isPrimeOrNot()) {
+            return new POJO("is prime");
+        } else {
+            return new POJO("is not prime");
+        }
     }
 
-    boolean getRespose(CalculatorEx11 calculatorEx11) {
-        System.out.println(calculatorEx11.isPrimeOrNot());
-        return calculatorEx11.isPrimeOrNot();
-    }
+
 }
 
 
@@ -63,8 +71,7 @@ public class Ex11_IsPrimeOrNot {
     public static void main(String[] args) {
         ValueEx11 valueEx11 = new ValueEx11(6);
         CalculatorEx11 calculatorEx11 = new CalculatorEx11(valueEx11);
-        PojoForValues pojoForValues = new PojoForValues(calculatorEx11);
-        pojoForValues.getRespose(calculatorEx11);
+        POJO finalResponse = calculatorEx11.responseContainer();
+        System.out.println(finalResponse.getResponse());
     }
-
 }
